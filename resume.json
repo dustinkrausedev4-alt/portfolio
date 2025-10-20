@@ -1,0 +1,122 @@
+{
+  "name": "Dustin Krause",
+  "title": "Senior Data Engineer — Capital One (12+ years)",
+  "summary": "I architect and optimize data pipelines and platforms to turn raw signals into trusted analytics and ML features. I focus on cloud-native streaming and batch architectures, observability, and production-grade MLOps.",
+  "contact": {
+    "email": "dustinkra18490@gmail.com",
+    "github": "https://github.com/dustinkrausedev4-alt",
+    "linkedin": ""
+  },
+  "skills": [
+    "Python",
+    "SQL",
+    "Scala",
+    "Spark",
+    "Apache Beam",
+    "Airflow",
+    "Kafka",
+    "BigQuery",
+    "Redshift",
+    "Snowflake",
+    "GCP",
+    "Azure",
+    "AWS",
+    "Terraform",
+    "Kubernetes",
+    "Docker",
+    "Great Expectations",
+    "DVC",
+    "MLflow",
+    "Prometheus",
+    "Grafana",
+    "PowerBI",
+    "Tableau"
+  ],
+  "projects": [
+    {
+      "name": "Streaming Fraud Detection Pipeline",
+      "description": "Low-latency pipeline using Kafka + Flink/Kinesis for near real-time fraud scoring and alerting.",
+      "live": "",
+      "code": ""
+    },
+    {
+      "name": "Unified Data Platform Migration",
+      "description": "Led migration from legacy ETL to cloud-native pipelines (GCP DataFlow/Apache Beam, BigQuery, Terraform).",
+      "live": "",
+      "code": ""
+    }
+  ],
+  "experience": [
+    {
+      "company": "Capital One",
+      "role": "Senior Data Engineer",
+      "start": "2025",
+      "end": "Present",
+      "start_iso": "2025-01",
+      "end_iso": "9999-12",
+      "location": "Remote",
+      "bullets": [
+        "Senior-level data engineering leadership and platform improvements (role summary placeholder — update with specific accomplishments)."
+      ]
+    },
+    {
+      "company": "Infosys",
+      "role": "Senior Data Engineer",
+      "start": "11/2023",
+      "end": "Present",
+      "start_iso": "2023-11",
+      "end_iso": "9999-12",
+      "location": "Richardson, TX",
+      "bullets": [
+        "Engineered robust ETL/ELT pipelines using Apache Spark, Airflow and Python to process structured and semi-structured data from operational and third-party sources.",
+        "Built real-time ingestion pipelines with Apache Kafka, Kafka Connect and Flink to support low-latency analytics.",
+        "Implemented Airflow DAGs with Great Expectations for automated data quality validations.",
+        "Designed Terraform IaC to provision Kubernetes clusters and data services; improved deployment repeatability."
+      ]
+    },
+    {
+      "company": "CVS Health",
+      "role": "Data Engineer",
+      "start": "08/2019",
+      "end": "11/2023",
+      "start_iso": "2019-08",
+      "end_iso": "2023-11",
+      "location": "Woonsocket, RI",
+      "bullets": [
+        "Built high-throughput real-time data pipelines using Kafka, Kinesis and Spark Streaming handling millions of events per second.",
+        "Designed a data lake on AWS (S3, Glue, Athena) and optimized Snowflake warehouses; improved query efficiency by ~40%.",
+        "Constructed distributed ETL framework with Spark and Airflow processing 320 GB/day and improving job speed by 28%.",
+        "Automated CI/CD with GitHub Actions and integrated cloud deployment pipelines to Kubernetes."
+      ]
+    },
+    {
+      "company": "Deloitte",
+      "role": "Data Analyst & Data Engineer",
+      "start": "06/2014",
+      "end": "08/2019",
+      "start_iso": "2014-06",
+      "end_iso": "2019-08",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Collected, cleaned, and validated datasets to support weekly business reporting and analyses.",
+        "Built interactive reports with Power BI and Excel dashboards and automated reports using macros (VBA).",
+        "Designed A/B testing frameworks that contributed to measurable business improvements."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "degree": "B.S. Computer Science",
+      "start": "09/2010",
+      "end": "06/2014",
+      "start_iso": "2010-09",
+      "end_iso": "2014-06",
+      "location": "Pittsburgh, PA",
+      "notes": ""
+    }
+  ],
+  "download": {
+    "pdf": "resume.pdf"
+  }
+}
