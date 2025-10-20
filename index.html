@@ -3,82 +3,96 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dustin Krause — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name — projects, skills, and contact." />
+  <title>Dustin Krause — Data Engineer Portfolio</title>
+  <meta name="description" content="Dustin Krause — Senior Data Engineer. GCP, Spark, Kafka, BigQuery, Airflow, Terraform." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Dustin Krause</a>
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
-      <nav id="siteNav" class="site-nav" aria-label="Primary">
+    <div class="container header-grid">
+      <a class="logo" href="#hero">Dustin Krause</a>
+
+      <nav id="siteNav" class="site-nav" aria-label="Primary" aria-hidden="false">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#timeline">Timeline</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://github.com/dustinkrausedev4-alt" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a id="githubLink" href="https://github.com/dustinkrausedev4-alt" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">☰</button>
     </div>
   </header>
 
   <main>
     <section id="hero" class="hero">
-      <div class="container">
-        <h1>Hi — I'm Dustin Krause</h1>
-        <p class="lead">Brick, NJ | dustinkra18490@gmail.com | (331) 291-4989</p>
-        <p>
-          <a class="btn" href="#projects">See my work</a>
-          <a class="btn btn-alt" href="#contact">Contact me</a>
-        </p>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 id="heroName">Dustin Krause</h1>
+          <p id="heroTitle" class="muted">Senior Data Engineer — Capital One (12+ years)</p>
+          <p id="heroSummary">I architect and optimize data pipelines and platforms to turn raw signals into trusted analytics and ML features. My focus: cloud-native pipelines, streaming, and production-grade MLOps.</p>
+
+          <p class="hero-cta">
+            <a class="btn" href="#timeline">See my timeline</a>
+            <a class="btn btn-alt" id="downloadResume" href="resume.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+          </p>
+
+          <ul class="contact-inline">
+            <li>Brick, NJ</li>
+            <li><a id="emailLink" href="mailto:dustinkra18490@gmail.com">dustinkra18490@gmail.com</a></li>
+            <li>(331) 291-4989</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="spark-card">
+            <h4>Core</h4>
+            <p class="spark">GCP · BigQuery · Spark · Kafka · Airflow · Terraform</p>
+            <div class="spark-bubble">12+ yrs</div>
+          </div>
+
+          <div class="curiosity">
+            <h4>Curious about</h4>
+            <ul>
+              <li>Streaming architectures & low-latency ML</li>
+              <li>Data observability and lineage</li>
+              <li>Reproducible MLOps with DVC & TFX</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="about" class="container about">
       <h2>About</h2>
-      <p>Short summary of who you are, your focus area, and what you want to build next. Keep this 2–3 sentences and link to your CV or LinkedIn if you wish.</p>
+      <div id="aboutText">I’m a senior data engineer with deep experience building large-scale data platforms and production data pipelines across retail, banking and healthcare. I enjoy pairing strong engineering craft with a clear understanding of business use cases — promotions, recommendations, personalization and fraud detection are among my focus areas.</div>
+    </section>
+
+    <section id="timeline" class="container timeline">
+      <h2>Timeline — University to Now</h2>
+      <div id="timelineList" class="timeline-list">
+        <!-- Timeline items rendered here -->
+      </div>
     </section>
 
     <section id="projects" class="container projects">
       <h2>Selected Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Project One</h3>
-          <p>1–2 line description. Tech: React, TypeScript, CSS.</p>
-          <p class="card-links">
-            <a href="#" target="_blank" rel="noopener">Live</a>
-            <a href="#" target="_blank" rel="noopener">Code</a>
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Project Two</h3>
-          <p>1–2 line description. Tech: Node, Express, PostgreSQL.</p>
-          <p class="card-links">
-            <a href="#" target="_blank" rel="noopener">Live</a>
-            <a href="#" target="_blank" rel="noopener">Code</a>
-          </p>
-        </article>
+      <div id="projectsGrid" class="grid">
+        <!-- projects rendered here -->
       </div>
     </section>
 
     <section id="skills" class="container skills">
-      <h2>Skills</h2>
-      <ul class="chips">
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>GraphQL</li>
-        <li>Docker</li>
-      </ul>
+      <h2>Skills & Platforms</h2>
+      <ul id="skillsList" class="chips"></ul>
     </section>
 
     <section id="contact" class="container contact">
       <h2>Contact</h2>
-      <p>Interested in working together? Email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or fill out the form below.</p>
+      <p>Interested in collaborating, hiring, or discussing data platforms? Email me at <a id="emailLink2" href="mailto:dustinkra18490@gmail.com">dustinkra18490@gmail.com</a>.</p>
 
       <form action="#" class="contact-form" onsubmit="alert('Replace this handler with a real form endpoint'); return false;">
         <label>
@@ -100,7 +114,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Your Name — <a href="https://github.com/dustinkrausedev4-alt" target="_blank" rel="noopener">GitHub</a></p>
+      <p>© <span id="year"></span> <span id="footerName">Dustin Krause</span> — <a id="footerGithub" href="https://github.com/dustinkrausedev4-alt" target="_blank" rel="noopener">GitHub</a></p>
     </div>
   </footer>
 
